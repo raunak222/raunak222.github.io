@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <p>The w3-animate-fading class animates an element in and out (takes about 10 seconds).</p>
+
+  <img class="mySlides w3-animate-fading" src="img1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img2.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img3.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="pi.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+</script>
+
+</body>
+</html>
+
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+ for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+
+html
+;<div class="w3-content w3-section" style="max-width:500px">
+  <p>.</p>
+
+  <img class="mySlides w3-animate-fading" src="img1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img2.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img3.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="pi.jpg" style="width:100%">
+</div>;

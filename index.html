@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="style.css">
+ <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+<link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+
+</head>
+<body>
+
+
+ <div id="left">
+         <div id ="panels">
+
+			   <h2>Left Content Area</h2>
+                <p>This area will contain the left content area.  
+                We will populate this area with images and text. </p>
+				<p>pick one <input type="text" id="pickdate">
+        
+		<h2>i am about past<h2>
+	<div>
+here you see how i lived in my past
+		</div>
+		<h2> this is my present</h2>
+		<div>present is moment in which i a leaving past andv going to future 
+		</div>
+		<h2>this is about my future </h2>
+		<div>i decide my future or it is predecided
+		</div>
+		</div>
+       </div>
+        <div id="center">
+                <h2>Center Content Area</h2>
+                <p>This area will contain the center content area.  
+                This area will contain the main articles. </p>
+        </div>
+ 
+        <div id="right">
+                <h2>Right Content Area</h2>
+                <p>This area will contain the right content area.
+                We will populate this area with links and text.</p>
+              <img src="download.jpg" title="learn simething"> 
+        </div>
+ <div id="test">
+ <button>hit </button>
+  <button id="hey">hey </button>
+</div>
+ </div>
+ <script src="jquery.min.js"></script>
+ <script src="jqueryui/jquery-ui.js"></script>
+
+ <script>
+ $(document).ready(function(){
+ $("#panels").accordion({event: "mouseover"});
+ //alert("you got it");
+  $("#pickdate").datepicker();
+//$("#img").tooltip({show: {effect: "pulsate",duration:800}});
+ //$("button").click(function(){
+
+ //$("#right").slideUp();});
+ // $("#hey").click(function(){
+  //$("#right").slideDown();
+
+//$(" #left").css({"color" : "blue","border" : "solid 2px red"});
+ //$("#right").mouseover(function(){
+ //$("#right").slideUp();});
+
+  //$("#right").mouseover(function(){
+  //$("#right").slideDown();
+
+//$("#right").fadeOut(2500).fadeIn(2500);
+//});
+//$("#right p").append("<p>you should take this</p>");
+// $("#right").remove();
+//$("#right p").replaceWith("<p>you should take this</p>");
+
+ //$("img").attr("src","pqr.jpg");
+//$("button").css("color","blue");
+ // $("img").removeAttr("src","pqr.jpg");
+//$("#right").hover(function(){
+ //$("#right").slideUp();});
+
+//$("img").show();},
+
+
+//$("div").css("background-color","pink");},
+//function(){
+// $("#right").slideDown();});
+
+//$("div").css("background-color","orange");
+//$("img").hide();
+
+ 
+ });
+
+ 
+ 
+ 
+ </script>
+
+
+
+
+
+
+</body>
+</html>

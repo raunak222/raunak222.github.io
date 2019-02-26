@@ -2,105 +2,202 @@
 <html>
 <head>
 <link type="text/css" rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Acme|Coiny" rel="stylesheet">
  <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.css">
 <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
 <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+ <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>﻿
+   <!-- Bootstrap Dropdown Hover CSS -->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
 
 </head>
 <body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navCollapse">
 
 
- <div id="left">
-         <div id ="panels">
-
-			   <h2>Left Content Area</h2>
-                <p>This area will contain the left content area.  
-                We will populate this area with images and text. </p>
-				<p>pick one <input type="text" id="pickdate">
-        
-		<h2>i am about past<h2>
-	<div>
-here you see how i lived in my past
-		</div>
-		<h2> this is my present</h2>
-		<div>present is moment in which i a leaving past andv going to future 
-		</div>
-		<h2>this is about my future </h2>
-		<div>i decide my future or it is predecided
-		</div>
-		</div>
-       </div>
-        <div id="center">
-                <h2>Center Content Area</h2>
-                <p>This area will contain the center content area.  
-                This area will contain the main articles. </p>
-        </div>
- 
-        <div id="right">
-                <h2>Right Content Area</h2>
-                <p>This area will contain the right content area.
-                We will populate this area with links and text.</p>
-              <img src="download.jpg" title="learn simething"> 
-        </div>
- <div id="test">
- <button>hit </button>
-  <button id="hey">hey </button>
+</button>
+<font-size="10">
+<a class="navbar-brand" href="#">rk</a>
 </div>
- </div>
- <script src="jquery.min.js"></script>
+<div class="collapse navbar-collapse" id="navCollapse">
+<ul class="nav navbar-nav" data-hover="dropdown">
+<li class ="active"><a href="#">home</a></li>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Interests<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="Interest.html">Singing</a></li>
+<li><a class="dropdown-item" href="Interest.html">Writing</a></li>
+<li><a class="dropdown-item" href="Interest.html">Physics</a></li>
+</ul>
+</li>
+
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" >Projects<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="Projects.html">Web Projects</a></li>
+<li><a class="dropdown-item" href="Projects.html">ML Projects</a></li>
+</ul>
+</li>
+
+<li><a href="https://weloveuniverse.wordpress.com/contact/">Contact Me</a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Me<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="About_me.html">my songs</a></li>
+<li><a class="dropdown-item" href="About_me.html">my poems</a></li>
+</ul>
+</li>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+<form class="navbar-form navbar-right">
+<div class="form-group">
+<input type="text" class="form-control " placeholder="search">
+</div>
+<button type="submit" class="btn btn-danger">submit</button>
+
+</form>
+</font>
+
+
+</div>
+
+</font>
+
+</ul>
+
+</div>
+</nav>
+
+
+
+<div id="ty">
+<h1> welcome to Raunak Sarada's Portfolio</h1> </div>
+<!--<div id="t"><img src ="pi.jpg"></div>-->
+<!-- Slideshow container -->
+<h2>
+  For me, it is far better to grasp the Universe as it really is than to persist in delusion, however satisfying and reassuring. 
+</h2>
+<p class="u"> Carl Edward Sagan</p>
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides w3-animate-fading">
+   <div id ="t"> <img src="r.jpg" style="width:400",height="50"></div>
+  </div>
+  <div class="mySlides w3-animate-fading">
+ <div id ="s">   <img src="rr.jpg" style="width:70%", height="500"></div>
+  </div>
+
+  <div class="mySlides w3-animate-fading">
+   <div id ="l"> <img src="pr.png" style="width:70%",height="100"></div>
+  </div>
+
+
+  
+</div>
+<br>
+
+<script src="jquery.min.js"></script>
  <script src="jqueryui/jquery-ui.js"></script>
 
  <script>
+ 
  $(document).ready(function(){
- $("#panels").accordion({event: "mouseover"});
- //alert("you got it");
-  $("#pickdate").datepicker();
-//$("#img").tooltip({show: {effect: "pulsate",duration:800}});
- //$("button").click(function(){
-
- //$("#right").slideUp();});
- // $("#hey").click(function(){
-  //$("#right").slideDown();
-
-//$(" #left").css({"color" : "blue","border" : "solid 2px red"});
- //$("#right").mouseover(function(){
- //$("#right").slideUp();});
-
-  //$("#right").mouseover(function(){
-  //$("#right").slideDown();
-
-//$("#right").fadeOut(2500).fadeIn(2500);
-//});
-//$("#right p").append("<p>you should take this</p>");
-// $("#right").remove();
-//$("#right p").replaceWith("<p>you should take this</p>");
-
- //$("img").attr("src","pqr.jpg");
-//$("button").css("color","blue");
- // $("img").removeAttr("src","pqr.jpg");
-//$("#right").hover(function(){
- //$("#right").slideUp();});
-
-//$("img").show();},
-
-
-//$("div").css("background-color","pink");},
-//function(){
-// $("#right").slideDown();});
-
-//$("div").css("background-color","orange");
-//$("img").hide();
-
+ $("#t").fadeOut(2500).fadeIn(2500); 
+   
+  $("#panels").accordion({event: "mouseover"});
+$("#panels").accordion({animate:110},{heightStyle: "content"});
  
+//$("#t").fadeOut(2500).fadeIn(2500);
+//$("#t").replaceWith("img2.jpg");
  });
+var myIndex = 0;
+carousel();
 
- 
- 
- 
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 7000);    
+}
+
  </script>
 
 
+<!------ Include the above in your HEAD tag ---------->
 
+<!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Follow Me</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="https://twitter.com/Raunak13064200"><i class="fa fa-angle-double-right"></i>Twitter</a></li>
+						<li><a href="https://www.instagram.com/raunak1999/"><i class="fa fa-angle-double-right"></i>Instagram</a></li>
+						<li><a href="https://m.facebook.com/raunak.sarada"><i class="fa fa-angle-double-right"></i>Facebook</a></li>
+						<li><a href="https://github.com/raunak222"><i class="fa fa-angle-double-right"></i>Github</a></li>
+						<li><a href="https://www.researchgate.net/profile/Raunak_Sarada"><i class="fa fa-angle-double-right"></i>Researchgate</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Projects</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Web Projects</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>ML Projects</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Research Project</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Android Project</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>About Me</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Hobbies</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Interests</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Blogging</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Singing</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				</hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p><u><a href="http://weloveuniverse.wordpress.com">Weloveuniverse</a></u> is a Wordpress site  [Owned By Raunak Sarada]</p>
+					<p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="http://weloveuniverse.wordpress.com" target="_blank">Weloveuniverse</a></p>
+				</div>
+				</hr>
+			</div>	
+		</div>
+	</section>
+	<!-- ./Footer -->
 
 
 

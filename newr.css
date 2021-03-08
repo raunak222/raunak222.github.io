@@ -53,29 +53,16 @@ nav>ul{
 	line-height:40px;
 	height:40px;
 	}
-.df{
-		color:#fff;
-		font-family:'Montserrat' , sans-seriff;
-		font-size:50px;
-		padding-left:350px;
-		padding-top:130px;
-	}
+
 .gg{
 	width:900px;
-	font-family: 'Montserrat' , sans-seriff;
+	font-family: 'Akaya Telivigala', cursive;
     color: #fff;
     padding-left:700px;	
 	font-size:30px;
 	padding-top:650px;
 	    }
-		.jj{
-			padding-left:600px;	
-			font-family: 'Montserrat' , sans-seriff;
-			color:#fff;
-			text-decoration:underline;
-			
-			
-		}
+		
 
 .container .btn:hover {
   background-color: black;
